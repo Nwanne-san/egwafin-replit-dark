@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Zzf_UGs2vYyHsqZkyUHNL"
+uri = "file://artifacts/egwafin-website/public/images/hero-businesswoman.png"
+type = "image"
+title = "Confident Nigerian businesswoman portrait"
+
+[[generated]]
+id = "CXaaCyxWBTxWyNqtZsjHQ"
+uri = "file://artifacts/egwafin-website/public/images/value-entrepreneurs.png"
+type = "image"
+title = "Nigerian entrepreneurs meeting"
+
+[[generated]]
+id = "d0AIT7VtZ1FrISkAcctFj"
+uri = "file://artifacts/egwafin-website/public/images/value-farmer.png"
+type = "image"
+title = "Nigerian farmer SME owner"
+
+[[generated]]
+id = "xqvgvK8JzH9110bIu3FvX"
+uri = "file://artifacts/egwafin-website/public/images/services.png"
+type = "image"
+title = "Financial services overview"
+
+[[generated]]
+id = "5kw9bbQip2r3xOr1llp78"
+uri = "file://artifacts/egwafin-website/public/images/product-business.png"
+type = "image"
+title = "SME Business Loan"
+
+[[generated]]
+id = "atVK5P-FramHPX_b6RyCl"
+uri = "file://artifacts/egwafin-website/public/images/product-farmer.png"
+type = "image"
+title = "Agricultural Loan"
+
+[[generated]]
+id = "AmQyc0S-Z_9U_GVfuIeYK"
+uri = "file://artifacts/egwafin-website/public/images/product-personal.png"
+type = "image"
+title = "Personal Savings Family"

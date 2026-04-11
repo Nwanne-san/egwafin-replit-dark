@@ -1,0 +1,216 @@
+Based on the design reference image and your content for **Egwafin Microfinance Bank**, here is a comprehensive, detailed prompt to build this website:
+
+---
+
+## **Design System & Visual Identity**
+
+**Color Palette:**
+- **Primary Background**: Deep matte black (`#0a0a0a` to `#0f0f0f`) for the main canvas, creating a premium, modern financial aesthetic
+- **Accent Color**: Vibrant lime/neon green (`#a3e635` or `#84cc16`) for CTAs, highlights, and interactive elements—symbolizing growth, prosperity, and financial vitality
+- **Secondary Background**: Charcoal gray (`#1a1a1a`, `#262626`) for cards, sections, and elevated surfaces
+- **Text Primary**: Pure white (`#ffffff`) for headings and important content
+- **Text Secondary**: Muted gray (`#a1a1aa`, `#71717a`) for body text and descriptions
+- **Border Color**: Subtle gray (`#27272a`) for card outlines and dividers
+- **Success/Light Section**: Bright lime green background (`#a3e635`) used sparingly for high-impact CTA sections (like the contact area)
+
+**Typography:**
+- **Font Family**: Modern geometric sans-serif (Inter, Plus Jakarta Sans, or Satoshi)—clean, professional, highly legible for financial content
+- **Headings**: Bold/Extra-bold weight (700-800), tight letter-spacing (-0.02em), large scale hierarchy
+- **Hero Title**: 56px-72px, line-height 1.1, maximum 6 words per line
+- **Body Text**: 16px-18px, line-height 1.6, regular weight (400-500)
+- **Navigation**: 14px-15px, medium weight, uppercase or capitalize
+- **Stats/Numbers**: Large display font (48px-64px), bold, tight tracking
+
+**Visual Elements:**
+- **Border Radius**: Consistent large rounding—buttons (24px-32px pill shape), cards (16px-24px), images (12px-16px)
+- **Spacing**: Generous whitespace (80px-120px) between sections; contained max-width (1280px-1440px) with 16px-48px padding
+- **Shadows**: Subtle dark shadows (`0 4px 20px rgba(0,0,0,0.3)`) for floating elements and cards
+- **Graphics**: Abstract lime-green starburst/sparkle icons (4-pointed stars) used as decorative accents near headings
+
+---
+
+## **Layout Structure & Sections**
+
+### **1. Floating Navigation Bar**
+- **Style**: Fixed position, pill-shaped container (rounded-full), glassmorphism effect (backdrop-blur-md, bg-white/5), centered at top
+- **Content**: Logo (left), Nav links—Home, About Us, Products, Services (center), "Get Started" CTA button (right—lime green bg, black text)
+- **Behavior**: 
+  - Transparent on hero, gains slight opacity on scroll
+  - Mobile: Hamburger menu morphs to X, slides in from right with dark charcoal background
+
+### **2. Hero Section**
+- **Layout**: Asymmetric two-column grid (55% text / 45% image), vertically centered
+- **Left Content**:
+  - Small lime-green badge above headline: "Licensed by CBN ✦"
+  - **Headline**: "Empowering Your Growth with Tailored Financial Solutions" (white, bold, 56px+)
+  - **Subtext**: "Discover a world of financial solutions tailored to the needs of SMEs, farmers, and entrepreneurs..." (gray, 18px, max-width 480px)
+  - **CTA Group**: Primary button (lime green bg, black text, rounded-full, 48px height: "Explore Our Services") + Secondary button (transparent, white border, rounded-full: "Contact Us")
+- **Right Content**:
+  - Professional photograph of a confident Nigerian businesswoman or entrepreneur in professional attire, smiling, perhaps holding a tablet or in an office setting
+  - **Floating Elements**: 
+    - 10 Years Experience badge (white card, rounded-xl, small shadow) positioned bottom-right of image
+    - Lime green starburst graphic positioned top-left of image
+    - Subtle curved arrow illustration pointing from text to image (hand-drawn style, white/lime)
+- **Background**: Solid deep black with subtle noise texture or gradient orb (lime green at 5% opacity) behind the image for depth
+
+### **3. Stats Counter Section**
+- **Layout**: Horizontal flex row, 4 columns, evenly spaced, contained in a charcoal card (`#1a1a1a`) with rounded-2xl
+- **Style**: No border or subtle 1px gray border, internal padding 40px
+- **Content**:
+  - "2000+" / "SMEs Financed"
+  - "10+" / "Years Experience" 
+  - "800+" / "Million Naira Disbursed"
+  - "150M+" / "Naira in Assets"
+- **Typography**: Numbers in lime green or white (48px, bold), labels in gray (14px, uppercase, tracking-wider)
+- **Animation**: Count-up animation when scrolled into view (0 to final number over 2 seconds)
+
+### **4. "Turning Ideas Into Masterpieces" Section (Value Prop)**
+- **Layout**: Two-column grid (40% text / 60% overlapping images)
+- **Left**: 
+  - Section label: "OUR MISSION" (lime green, small, uppercase)
+  - Heading: "Turning Ideas Into Masterpieces" (white, 40px)
+  - Body text explaining the bank's commitment to supporting businesses
+- **Right**:
+  - **Image Composition**: Two overlapping photographs with rounded-2xl corners
+    - Main image: Group of diverse Nigerian entrepreneurs in a meeting/training session (black and white filter or desaturated)
+    - Secondary image: Portrait of a farmer or SME owner (offset by -40px top and right, smaller, color photo or duotone lime overlay)
+  - **Floating Badge**: Lime green rectangular pill positioned over the image intersection with text "A TRUSTED FINANCIAL PARTNER" (black text, small, bold)
+  - **Decorative**: Small rotating lime green star icon near the heading
+
+### **5. Our Ecosystem/Services Section (Interactive Accordion)**
+- **Layout**: Two-column (50/50), sticky positioning on left while scrolling
+- **Left Column**:
+  - Heading: "Our Services" with lime highlight background behind the word "Services"
+  - Subtext: "We offer a range of flexible and digital services..."
+  - **Vertical Accordion List** (4 items):
+    1. "01. Tailored Loans" (arrow icon right, expands to show SME and Agricultural loan details)
+    2. "02. Safe & Secure Deposits" (savings accounts info)
+    3. "03. Market Access" (connecting buyers/suppliers)
+    4. "04. Human Capital Development" (training resources)
+  - **Style**: Each item is a dark card (`#1c1c1e`) with rounded-xl, 1px border, hover shifts border to lime green, expands smoothly with height animation
+- **Right Column**:
+  - Large featured image showing: Modern banking environment, happy customer service interaction, or agricultural field with technology
+  - **Floating CTA Card**: Positioned bottom-right overlapping the image, lime green background, rounded-2xl, text: "See how we work →" with arrow icon
+  - Decorative SVG line connecting accordion items to the image area
+
+### **6. Infinite Marquee Banner**
+- **Style**: Full-width, overflow hidden, border-y 1px gray border
+- **Content**: Scrolling text "Innovate ✦ Inspire ✦ Create ✦ Grow ✦ Thrive" repeated
+- **Typography**: Large (64px+), bold, white text, uppercase
+- **Animation**: Infinite horizontal scroll (CSS marquee, 20-30s duration, linear, seamless loop)
+- **Variation**: Alternate direction on scroll up vs scroll down
+
+### **7. Why Choose Us / Features Grid**
+- **Layout**: 3-column grid of feature cards
+- **Content**:
+  - "Quick & Easy Application" (icon: lightning bolt or checkmark)
+  - "Competitive Interest Rates" (icon: percentage or trend down)
+  - "Dedicated Customer Support" (icon: headset or chat bubble)
+- **Card Style**: Dark charcoal bg, rounded-2xl, padding 32px, border 1px gray
+- **Hover Effect**: Card lifts slightly (translateY -8px), border color transitions to lime green, icon glows lime
+
+### **8. Our Products Section**
+- **Layout**: Horizontal scroll cards or 3-column grid
+- **Cards**:
+  - SME Business Loan (image: business owner)
+  - Agricultural Loan (image: farmer with crops)
+  - Personal Savings (image: family/happy individual)
+- **Style**: Image on top (rounded-t-2xl), content below on dark bg, lime green "Learn More" link with arrow
+
+### **9. Testimonials (Social Proof)**
+- **Layout**: Carousel or masonry grid
+- **Style**: Dark cards with lime green quotation mark icon
+- **Content**: Customer testimonials from Nigerian entrepreneurs/SMEs
+- **Elements**: Star ratings (lime colored), customer photos (rounded-full, 48px), names and business titles
+
+### **10. Contact Section (High Contrast)**
+- **Background**: Solid lime green (`#a3e635`)
+- **Layout**: Two-column (text left / form right)
+- **Left**: 
+  - Heading: "Get in Touch Today!" (black text)
+  - Contact details: Address (Plot 2, Suite 1...), Phone (08061965876), Email (support@egwafinmfb.com)
+  - Small map embed or location illustration
+- **Right**:
+  - Contact form with fields: Name, Email, Subject, Message
+  - Input style: White background, rounded-lg, dark text, no border or subtle border
+  - Submit button: Black bg, white text, rounded-full, full width
+- **Image**: Professional photo of bank staff member (similar to hero style but smaller) positioned between columns
+
+### **11. Footer**
+- **Background**: Deepest black (`#050505`)
+- **Layout**: 4-column grid (Logo/About, Quick Links, Legal, Newsletter)
+- **Content**:
+  - Column 1: Egwafin Logo + "Licensed by the Central Bank of Nigeria" tagline
+  - Column 2: About, Contact, FAQ links
+  - Column 3: Terms of Service, Privacy Policy
+  - Column 4: Newsletter signup ("Subscribe to get latest news"), email input with lime green submit button
+- **Bottom Bar**: "© 2026. All Rights Reserved. Egwafin MFB" centered, gray text, border-t 1px gray
+
+---
+
+## **Animations & Interactions**
+
+**Micro-interactions:**
+- **Buttons**: On hover, fill animation sweeps from left (lime to white, or white to lime), text color inverts, slight scale (1.02)
+- **Links**: Underline grows from center on hover (lime color)
+- **Cards**: Subtle lift (transform: translateY(-4px)) + shadow increase on hover
+- **Accordion**: Smooth height transition (300ms ease-in-out), arrow rotates 90deg when open
+
+**Scroll Animations:**
+- **Reveal**: Elements fade in + translateY (20px to 0) as they enter viewport (Intersection Observer, threshold 0.1)
+- **Stagger**: Grid items animate in sequence (100ms delay between each)
+- **Parallax**: Hero image moves at 0.8x scroll speed; background shapes move at 0.5x
+
+**Special Effects:**
+- **Starburst Icons**: Slow rotation (20s infinite linear) or pulse scale animation
+- **Gradient Orbs**: Subtle floating animation (up/down 20px, 6s ease-in-out infinite) positioned behind content for depth
+- **Image Reveal**: Images load with a clip-path reveal from bottom to top or circular expand
+
+**Navigation:**
+- **Active State**: Current page link has lime green dot indicator below or lime text color
+- **Mobile Menu**: Slide in from right (transform: translateX(100%) to 0), backdrop blur on main content
+
+---
+
+## **Imagery Specifications**
+
+**Photography Style:**
+- **Tone**: Professional, warm, empowering, diverse Nigerian representation
+- **Color Treatment**: High contrast, slightly desaturated (cinematic look) with lime green accent overlays possible
+- **Subjects**: 
+  - Hero: Professional Nigerian woman, 30s-40s, confident expression, business casual or formal wear, neutral or office background
+  - Ecosystem: SMEs in shops, farmers in fields, mobile banking/tech usage, group training sessions
+  - Products: Close-ups of hands shaking, counting money (tasteful), agricultural produce, modern POS devices
+- **Avoid**: Generic stock photos, low-quality images, overly corporate stiff poses
+
+**Icons:**
+- Style: Outline or filled, 2px stroke weight, rounded corners
+- Color: White or lime green
+- Library: Phosphor Icons, Heroicons, or Lucide
+
+---
+
+## **Responsive Behavior**
+
+**Desktop (1280px+)**: Full layout as described, side-by-side columns
+**Tablet (768px-1279px)**: 
+- Hero stacks vertically (image below text)
+- Stats become 2x2 grid
+- Services accordion becomes full width, image below
+**Mobile (< 768px)**:
+- Single column layouts
+- Navigation collapses to hamburger
+- Marquee text size reduces to 32px
+- Contact section stacks vertically (form below info)
+- Increased padding (16px-24px sides)
+
+**Technical Notes:**
+- Use CSS Grid and Flexbox
+- Container max-width: 1280px (xl) or 1440px (2xl)
+- Implement smooth scrolling (scroll-behavior: smooth)
+- Ensure focus states for accessibility (lime green outline)
+- Loading state: Skeleton screens matching the dark theme
+
+---
+
+This prompt provides a complete blueprint for a premium, modern fintech/microfinance website that combines the bold, creative agency aesthetic of the reference image with the professional trustworthiness required for a financial institution in Nigeria.
