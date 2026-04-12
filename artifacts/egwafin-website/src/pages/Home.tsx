@@ -32,20 +32,22 @@ function AnimatedCounter({
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
-    if (inView) {
-      let start = 0;
-      const increment = end / (duration * 60);
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= end) {
-          setCount(end);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(start));
-        }
-      }, 1000 / 60);
-      return () => clearInterval(timer);
-    }
+    // If not in view, just exit early
+    if (!inView) return;
+
+    let start = 0;
+    const increment = end / (duration * 60);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 1000 / 60);
+
+    return () => clearInterval(timer);
   }, [inView, end, duration]);
 
   return <span ref={ref}>{count}</span>;
