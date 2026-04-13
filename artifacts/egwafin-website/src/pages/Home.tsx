@@ -537,7 +537,7 @@ export default function Home() {
             {[
               {
                 img: "/images/product-business.png",
-                title: "BizBooth - SME Business Loan",
+                title: "BizBoost - SME Business Loan",
                 desc: "Scale your operations with flexible working capital.",
               },
               {
@@ -596,7 +596,7 @@ export default function Home() {
               {
                 name: "Chinedu Okeke",
                 role: "CEO, TechHive Solutions",
-                text: "Egwafin understood our vision when traditional banks wouldn't even look at us. Their BizBooth service helped us scale our operations across three states.",
+                text: "Egwafin understood our vision when traditional banks wouldn't even look at us. Their BizBoost service helped us scale our operations across three states.",
               },
               {
                 name: "Aisha Bello",
