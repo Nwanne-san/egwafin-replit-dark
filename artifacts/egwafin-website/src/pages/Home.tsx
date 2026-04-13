@@ -665,7 +665,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold">Visit Us</p>
                   <p className="text-black/70">
-                    Plot 2, Suite 1, Egwafin House, Nigeria
+                  Plot 2, Suite 1 Rixari Skin Secrets Plaza, Opposite American Snacks, Gado Nasco Road, Kubwa, Abuja.
                   </p>
                 </div>
               </div>
