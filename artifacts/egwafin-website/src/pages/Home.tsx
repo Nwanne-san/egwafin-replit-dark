@@ -664,7 +664,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-bold">Visit Us</p>
-                  <p className="text-black/70 max-w-[240px]">
+                  <p className="text-black/70 max-w-[300px]">
                   Plot 2, Suite 1 Rixari Skin Secrets Plaza, Opposite American Snacks, Gado Nasco Road, Kubwa, Abuja.
                   </p>
                 </div>
