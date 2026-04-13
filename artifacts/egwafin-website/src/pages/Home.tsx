@@ -537,17 +537,17 @@ export default function Home() {
             {[
               {
                 img: "/images/product-business.png",
-                title: "BizBoost - SME Loans",
+                title: "BizBoost",
                 desc: "Scale your operations with flexible working capital.",
               },
               {
                 img: "/images/product-farmer.png",
-                title: "NomA - Agricultural Loan",
+                title: "NomA",
                 desc: "Empowering farmers with tools, seeds, and equipment financing.",
               },
               {
                 img: "/images/product-personal.png",
-                title: "MoW - Personal Finance",
+                title: "MoW",
                 desc: "Secure your family's future with our high-yield accounts.",
               },
             ].map((prod, i) => (
