@@ -537,7 +537,7 @@ export default function Home() {
             {[
               {
                 img: "/images/product-business.png",
-                title: "BizBoost - SME Business Loan",
+                title: "BizBoost - SME Loans",
                 desc: "Scale your operations with flexible working capital.",
               },
               {
