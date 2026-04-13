@@ -537,17 +537,17 @@ export default function Home() {
             {[
               {
                 img: "/images/product-business.png",
-                title: "SME Business Loan",
+                title: "BizBooth - SME Business Loan",
                 desc: "Scale your operations with flexible working capital.",
               },
               {
                 img: "/images/product-farmer.png",
-                title: "Agricultural Loan",
+                title: "NomA - Agricultural Loan",
                 desc: "Empowering farmers with tools, seeds, and equipment financing.",
               },
               {
                 img: "/images/product-personal.png",
-                title: "Personal Savings",
+                title: "MoW - Personal Finance",
                 desc: "Secure your family's future with our high-yield accounts.",
               },
             ].map((prod, i) => (
@@ -596,7 +596,7 @@ export default function Home() {
               {
                 name: "Chinedu Okeke",
                 role: "CEO, TechHive Solutions",
-                text: "Egwafin understood our vision when traditional banks wouldn't even look at us. Their SME loan helped us scale our operations across three states.",
+                text: "Egwafin understood our vision when traditional banks wouldn't even look at us. Their BizBooth service helped us scale our operations across three states.",
               },
               {
                 name: "Aisha Bello",
